@@ -78,3 +78,43 @@ p hash
 
 # Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 # For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
+
+# Write a function that takes in an array of numbers and returns its sum.
+
+def summation(array)
+  sum = 0
+  array.each do |ele|
+    sum += ele
+  end
+  return p sum
+end
+
+summation([1, 4, 5, 5])
+
+# Write a function that takes in an array of strings and returns the smallest string.
+def smallestString(array)
+  smallest = array[0].length
+  word = array[0]
+  array.each do |element|
+    if smallest > element.length
+      smallest = element.length
+      word = element
+    end
+  end
+  return p word
+end
+smallestString(["string1", "biggerword", "string"])
+
+#Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+def reverseNumbers(array)
+  index = array.length - 1
+  array2 = []
+  while index > -1
+    array2 << array[index]
+    index -= 1
+  end
+  return p array2
+end
+reverseNumbers([2,4,5,6])
+
+

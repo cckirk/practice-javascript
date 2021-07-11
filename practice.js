@@ -124,3 +124,80 @@ factorial(4);
 // Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 // For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
 
+// Write a function that accepts an array of strings and returns a new array containing every other string from the original array. For example, if the input is ["a", "b", "c", "d", "e", "f"], the output should be ["a", "c", "e"].
+
+
+function everyOtherElement(array) {
+  var new_array = [];
+  var index = 0;
+  console.log(index % 2);
+  while (index < array.length) {
+    if (index % 2 === 0) {
+      new_array.push(array[index]);
+    }
+    index++;
+  }
+  return console.log(new_array);
+}
+everyOtherElement(["a", "b", "c", "d", "e"]);
+
+// Write a method that accepts one argument - an array of numbers. The method should return the greatest number. For example, if the input is [5, 4, 8, 1, 2], the output should be 8.
+
+function maxElement(array) {
+  var max = 0;
+  array.forEach(function (element) {
+    if (element > max) {
+      max = element;
+    }
+  });
+  return console.log(max);
+}
+maxElement([5, 4, 8, 1, 2]);
+
+// Write a method that accepts a number and returns its factorial. For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
+
+function factorial(num) {
+  var prod = 1;
+  while (num > 0) {
+    prod *= num;
+    num--;
+  }
+  return console.log(prod);
+}
+factorial(5);
+
+// Write a method that accepts one argument - an array of numbers that are in ascending order. The method that returns a new array with the same values in descending order. However, do not use the "reverse" method built into Ruby.
+
+// Write a function that takes in an array of numbers and returns its sum.
+
+function getSum(array) {
+  var index = 0;
+  var sum = 0;
+  while (index < array.length) {
+    sum += array[index];
+    index++;
+  }
+  return console.log(sum);
+}
+getSum([1, 3, 1, 5, 5]);
+
+//Write a function that takes in an array of strings and returns the smallest string.
+
+function smallestString(array) {
+  var smallest = array[0].length;
+  var word = array[0];
+  array.forEach(function (element) {
+    if (smallest > element.length) {
+      smallest = element.length;
+      word = element;
+    }
+  });
+  return console.log(word);
+}
+smallestString(["string1", "biggerword", "string"])
+
+//Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+
+function (array) {
+  var index
+}
