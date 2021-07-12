@@ -197,7 +197,3 @@ function smallestString(array) {
 smallestString(["string1", "biggerword", "string"])
 
 //Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
-
-function (array) {
-  var index
-}
